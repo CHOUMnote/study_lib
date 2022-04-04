@@ -1,0 +1,20 @@
+.tData{
+    background-color: skyblue;
+    color:blue;
+}
+.tData2{
+    color:coral;
+    background-color:gainsboro;
+}
+.tHead{
+    color:coral;
+    background-color:bisque;
+}
+.tList{
+    color:blueviolet;
+    background-color:antiquewhite;
+}
+.tFoot{
+    color:white;
+    background-color:blue;
+}

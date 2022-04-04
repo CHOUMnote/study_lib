@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ex5</title>
+</head>
+<body>
+    <form>
+    <table border="1" style="width: 400px;">
+        <tr><th colspan="2">회원 가입</th></tr>
+        <tr name="id">
+            <th>아이디</th>
+            <td><input type="text" required></td>
+        </tr>
+        <tr name="password">
+            <th>패스워드</th>
+            <td><input type="password"></td>
+        </tr>
+        <tr name="gender">
+            <th>성별</th>
+            <td>
+            <label><input type="radio" name="gender">남자</label>
+            <label><input type="radio" name="gender">여자</label>
+            </td>
+        </tr>
+        <tr name="country">
+            <th>국적</th>
+            <td><input type="text" list="list">
+            <datalist id="list">
+                <option>대한민국</option>
+                <option>북한</option>
+                <option>일본</option>
+                <option>중국</option>
+            </datalist></td>
+        </tr>
+        <tr name="family">
+            <th>가족사항</th>
+            <td>
+            <label><input type="checkbox">부모</label>
+            <label><input type="checkbox">형제자매</label>
+            <label><input type="checkbox">배우자</label>
+            <label><input type="checkbox">자식</label>
+            </td>
+        </tr>
+        <tr name="file">
+            <th>이력서</th>
+            <td><input type="file"></td>
+        </tr>
+        <tr name="birth">
+            <th>생년월일</th>
+            <td><input type="date"></tr>
+        </tr>
+        <label><td colspan="2">
+            <input type="submit" value="가입">
+            <input type="reset" value="재작성">
+        </td></label>
+    </table>
+    </form>
+</body>
+</html>

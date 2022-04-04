@@ -1,0 +1,35 @@
+header>h1{
+    color: red;
+}
+.box1>div:first-child>strong{
+    background-color: yellow;
+}
+section{
+    background-color:orange;
+}
+a{
+    text-decoration: none;
+}
+ul>li:first-child>a{
+    color: blue;
+}
+ul>li:nth-child(2)>a{
+    color: red;
+}
+ul>li:last-child>a{
+    color: green;
+}
+
+div>ul{
+    width: 20em;
+    height: 10em;
+    background-color: aquamarine;
+}
+ul>li:hover{
+    background-color:yellow;
+    font-size: 1.5em;
+}
+.box1>div:last-child{
+    color:white;
+    height: 5em;
+}

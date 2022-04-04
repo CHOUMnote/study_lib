@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ex1</title>
+</head>
+<body>
+    <h3><b>선택사항을 직접 입력하세요.</b></h3>
+    <form id="f">
+        <fieldset style="width:400px">
+            <legend>학술지정보</legend>
+            <span>전공 분야:</span><input type="text" list="list">
+            <datalist id="list">
+                <option>빅데이터</option>
+                <option>IOT</option>
+                <option>컨텐츠</option>
+            </datalist>
+            <span><br>등록일:</span><input type="date">
+            <span><br>메일수신:</span>
+            <input type="radio" name="agree" value="T" id="agree1"><label for="agree1">수신동의</label>
+            <input type="radio" name="agree" value="F" id="agree2"><label for="agree2">수신거부</label><br>
+            <input type="button" value="전송">
+            <input type="reset" value="취소">
+        </fieldset>
+    </form>
+</body>
+</html>

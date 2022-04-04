@@ -1,0 +1,19 @@
+div[class*="position"]{
+    background-color:bisque;
+    width:30vw;
+    height:20vh;
+}
+div[class*="pseudo"]{
+    background-color:lime;
+    width:30vw;
+    height:30vh;
+}
+input[type="text"]:focus{
+    background-color:red;
+}
+div[class*="pseudo"] span{
+    color:lime;
+}
+div[class*="pseudo"] span:hover{
+    color:red;
+}
