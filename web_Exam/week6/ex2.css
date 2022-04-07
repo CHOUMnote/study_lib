@@ -1,0 +1,17 @@
+div{
+    height:70vh;
+    width:40vw;
+    background-image:url(flower.png);
+    background-size: 20vw;
+    background-position: bottom left;
+    background-repeat:no-repeat;
+    margin:10px 0px 0px 50px;
+    border: 10px dashed yellow;
+    text-align:center;
+}
+hr{
+    border:4px solid red;
+}
+div:hover{
+    background-image:url(danggen.png);
+}

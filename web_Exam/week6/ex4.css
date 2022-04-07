@@ -1,0 +1,19 @@
+nav{
+    background-color:greenyellow;
+    width:70vw;
+}
+ul{
+    list-style-type : none; 
+    font-size:30px;
+}
+li{
+    display : inline-block;
+    margin-right: 50px;
+}
+a{
+    text-decoration: none;
+    color : white;
+}
+a:hover{
+    color : pink;
+}

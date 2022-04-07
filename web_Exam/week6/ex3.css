@@ -1,0 +1,29 @@
+section{
+    padding: 50px 100px;
+}
+div{
+    text-align: center;
+    line-height:200px;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    border-radius: 50%;
+    font-size:50px;
+    margin: 0px 30px;
+}
+a{
+    color:violet;
+    text-decoration: none;
+}
+a:hover{
+    color:white;
+}
+div:nth-child(1){
+    background-color:burlywood;
+}
+div:nth-child(2){
+    background-color:brown;
+}
+div:nth-child(3){
+    background-color:gray;
+}
