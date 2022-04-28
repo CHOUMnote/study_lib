@@ -1,0 +1,30 @@
+*{
+    margin:0;
+    padding:0;
+    color : white;
+    list-style:none;
+}
+div{
+    background-color:black;
+    width:700px;
+    height:50px;
+    float:right;
+}
+div>ul>li{
+    float:left;
+    line-height:50px;
+    margin-left:40px;
+}
+li>ul{
+    visibility:hidden;
+    position:absolute;
+    background-color:gray;
+}
+li li{
+    padding:10px;
+    height:30px;
+    line-height:30px;
+}
+div>ul>li:hover>ul{
+    visibility:visible;
+}

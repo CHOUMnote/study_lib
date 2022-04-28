@@ -1,0 +1,38 @@
+a{
+    text-decoration: none;
+}
+header{
+    margin: 0 auto;
+    background-color:darkgrey;
+    width:500px;
+    height:80px;
+   
+}
+h1{
+    height:80px;
+    margin:0;
+    float:left;
+}
+h1>a{
+    color: lightsalmon;
+    line-height:80px;
+}
+
+nav{
+    float:right;
+    height: 80px;
+}
+ul{
+    margin:0;
+    padding: 0;
+    height: 80px;
+}
+li{
+    line-height: 80px;
+    list-style:none;
+    float:left;
+}
+li>a{
+    color:pink;
+    padding: 0 20px;
+}

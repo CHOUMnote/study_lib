@@ -1,0 +1,29 @@
+*{
+    margin:0;
+    padding:0;
+    list-style:none;
+    text-decoration: none;
+}
+body{
+    padding:20px;
+}
+.left>.gnb>li{
+    line-height:40px;
+    padding-right:10px;
+    float:left;
+}
+.right{
+    float:right;
+}
+.main{
+    clear:both;
+    float:left;
+    width:500px;
+}
+div:last-of-type{
+    padding:20px;
+    float: right;
+}
+h3,p{
+    padding:10px 0px
+}

@@ -1,0 +1,32 @@
+#container{
+    position: relative;
+    border:3px solid red;
+    height: 300px;
+    width:500px;
+}
+.circle{
+    position: absolute;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+#red{
+    top:0;
+    left:0;
+    background-color:red;
+}
+#green{
+    top:0;
+    right:0;
+    background-color:green;
+}
+#blue{
+    bottom:0;
+    right:0;
+    background-color:blue;
+}
+#yellow{
+    bottom:0;
+    left:0;
+    background-color:yellow;
+}
