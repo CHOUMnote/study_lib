@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="ex2.css" type="text/css">
+    <title>ex2</title>
+    <style>
+        *{
+            text-decoration: none;
+            color:black;
+            list-style-type:none;
+            margin:0;
+        }
+        .menu_bar{
+            background-color:aqua;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:20px;
+        }
+        .menu_item{
+            display:flex;
+            padding:0;
+        }
+        li{
+            padding : 10px 30px;
+        }
+        li:hover{
+            background-color:blue;
+            border-radius: 20px;
+        }
+        @media screen and (max-width:799px) {
+            .menu_bar{
+                padding:0;
+                display:flex;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .menu_left{
+                padding:20px;
+            }
+            .menu_right{
+                position: absolute;
+                top: 20px;
+                right: 10px;
+            }
+            .menu_item{
+                width: 100%;
+                flex-direction: column;
+                justify-content:center;
+            }
+            .menu_item li{
+                text-align:center;
+                width: 100%;
+                padding: 15px 0px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav class="menu_bar">
+        <div class="menu_left">
+            <a href="">Hallym</a>
+        </div>
+
+        <ul class="menu_item">
+            <li>대학소개</li>
+            <li>전공</li>
+            <li>대학생활</li>
+            <li>학사지원</li>
+        </ul>
+
+        <div class="menu_right">
+            <a href="">smartlead</a>
+        </div>
+    </nav>
+
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+body {
+    width: 70vw;
+    margin: 10px auto;
+    color: white;
+    text-align: center;
+}
+#middle{
+    display: flex;
+    justify-content: space-evenly;
+    height: 40vh;
+    line-height: 40vh;
+}
+#top{
+    background-color:green;
+    margin-bottom: 5px;
+}
+#left{
+    background-color:red;
+    flex:auto;
+}
+#center{
+    background-color:purple;
+    flex:auto;
+    margin: 0 5px;
+}
+#right{
+    background-color:blue;
+    flex:auto;
+}
+#bottom{
+    background-color: chocolate;
+    margin-top: 5px;
+}
