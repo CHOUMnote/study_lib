@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ex5</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="ex5.js"></script>
+    <style>
+        * {
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        li {
+            list-style: none;
+            width: 100%;
+        }
+
+        body {
+            background: #E6E6E6;
+        }
+
+        .outer-menu {
+            display: flex;
+            width: 60vw;
+        }
+
+        .outer-menu-item {
+            position: relative;
+        }
+
+        .outer-menu-item:hover {
+            background: black;
+            color: white
+        }
+
+        .menu-title {
+            display: block;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            padding: 5px 20px;
+        }
+
+        .inner-menu {
+            display: none;
+            position: absolute;
+            top: 40px;
+            left: 0;
+            width: 100%;
+            background: white;
+            text-align: center
+        }
+
+        .inner-menu-item>a {
+            display: block;
+            padding: 5px 10px;
+            color: black
+        }
+
+        .inner-menu-item>a:hover {
+            background: black;
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <ul class="outer-menu">
+            <li class="outer-menu-item">
+                <span class="menu-title">HTML5</span>
+                <ul class="inner-menu">
+                    <li class="inner-menu-item"><a href="#">software</a></li>
+                    <li class="inner-menu-item"><a href="#">software</a></li>
+                </ul>
+            </li>
+            <li class="outer-menu-item">
+                <span class="menu-title">CSS3</span>
+                <ul class="inner-menu">
+                    <li class="inner-menu-item"><a href="#">software</a></li>
+                    <li class="inner-menu-item"><a href="#">software</a></li>
+                    <li class="inner-menu-item"><a href="#">software</a></li>
+                </ul>
+            </li>
+            <li class="outer-menu-item">
+                <span class="menu-title">JavaScript</span>
+                <ul class="inner-menu">
+                    <li class="inner-menu-item"><a href="#">software</a></li>
+                    <li class="inner-menu-item"><a href="#">software</a></li>
+                    <li class="inner-menu-item"><a href="#">software</a></li>
+                    <li class="inner-menu-item"><a href="#">software</a></li>
+                    <li class="inner-menu-item"><a href="#">software</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
