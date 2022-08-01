@@ -17,3 +17,9 @@ def detail(request, id):
     question = get_object_or_404(Question, pk=id)
     context = {'question': question}
     return render(request, 'pybo/question_detail.html', context)
+
+def answer_create(request, id):
+    print(request.POST)
+    question = get_object_or_404(Question, pk=id)
+    question.answer_set.create(content=request.POST.get('content'))
+    return redirect('pybo:detail', id=question.id)
