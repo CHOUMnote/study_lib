@@ -3,6 +3,7 @@ from django.views.generic import View
 from django.http import HttpResponse
 from .models import Question,Answer
 from django.views.decorators.csrf import csrf_exempt
+from .forms import QuestionForm
 
 class Root(View):
     def get(self, request):
@@ -25,3 +26,12 @@ def answer_create(request, question_id):
     answer = Answer(question=question, content=request.POST.get('content'))
     answer.save()
     return redirect('pybo:detail', question_id=question.id)
+
+@csrf_exempt
+def question_create(request):
+    if request.method == "GET":
+        form = QuestionForm()
+        return render(request, 'pybo/question_form.html', {'form': form})
+    
+    if request.method == "POST":
+        pass#...
