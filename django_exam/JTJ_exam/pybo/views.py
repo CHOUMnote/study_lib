@@ -31,7 +31,11 @@ def answer_create(request, question_id):
 def question_create(request):
     if request.method == "GET":
         form = QuestionForm()
-        return render(request, 'pybo/question_form.html', {'form': form})
     
     if request.method == "POST":
-        pass#...
+        form = QuestionForm(request.POST)
+        if form.is_valid():
+            question = form.save(commit=False)
+            question.save()
+            return redirect('pybo:home')
+    return render(request, 'pybo/question_form.html', {'form': form})
