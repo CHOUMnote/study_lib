@@ -4,6 +4,7 @@ WORKDIR /usr/src/app
 
 ## Install packages
 COPY requirements.txt ./
+RUN apt-get update
 RUN pip install -r requirements.txt
 
 ## Copy all src files
