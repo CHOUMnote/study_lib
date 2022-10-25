@@ -4,14 +4,18 @@ from django.http import HttpResponse
 from .models import Question,Answer
 from django.views.decorators.csrf import csrf_exempt
 from .forms import QuestionForm
+from django.core.paginator import Paginator
 
 class Root(View):
     def get(self, request):
         return redirect("/pybo/")
 
 def index(request):
+    page = request.GET.get('page', '1')  # 페이지
     question_list = Question.objects.order_by('-create_date')
-    context = {'question_list': question_list}
+    paginator = Paginator(question_list, 10)  # 페이지당 10개씩 보여주기
+    page_obj = paginator.get_page(page) #10개짜리 해당 페이지 쿼리 변환
+    context = {'question_list': page_obj}
     return render(request, 'pybo/question_list.html', context)
 
 def detail(request, question_id):
